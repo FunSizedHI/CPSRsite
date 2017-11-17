@@ -1,0 +1,280 @@
+/************
+Base Styles
+************/
+
+@font-face {
+  font-family: 'Heebo', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Heebo");
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1 {
+  position: relative;
+  width: 100%;
+  color: #1F4DA1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.paraContainer {
+  margin-top: 40px;
+  margin-left: auto;
+}
+p {
+  text-align: left;
+}
+.footer {
+  flex: 1;
+  background-color: #1F4DA1;
+  margin-top: 80px;
+}
+.footerText {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 0.75em;
+  color: white;
+}
+
+/**********************
+Home Page
+**********************/
+
+.homeImage {
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.homeImage h5 {
+  margin-bottom: 20px;
+}
+.homeBannerText {
+  color: white;
+  text-shadow: 2px 2px #1F4DA1;
+  font-size: 5em;
+  margin: auto;
+  vertical-align: middle;
+}
+.grounded {
+  margin-bottom: 60px;
+}
+
+/**********************
+About Page
+**********************/
+
+.aboutHeadText {
+  color: white;
+}
+.circlesOnly_About {
+  max-width: 75%;
+  height: auto;
+}
+.suLogo_About {
+  padding: 0 2em 2em 0;
+}
+
+/**********************
+Howard Thurman Trivia
+**********************/
+
+.trivH1 {
+  position: relative;
+  width: 100%;
+  color: #1F4DA1;
+  text-align: left;
+}
+.questions {
+  margin-bottom: 40px;
+  margin-left: 1rem;
+}
+button {
+  background: #1F4DA1;
+  border: none;
+  border-radius: 5px;
+  color: #dae1e4;
+  font-size: 24px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  padding: 40px 20px;
+}
+.answers {
+	background: #1F4DA1;
+  width: 360px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+button,
+.answers {
+  max-width: 80%;
+  height: auto;
+}
+.answers span {
+  color: #dae1e4;
+}
+.htTrivPhoto {
+  margin-bottom: 40px;
+  border: 20px solid #1F4DA1;
+}
+
+/**********************
+Contact Page
+**********************/
+.contactBanner {
+  margin-bottom: 40px;
+}
+.contactBannerH1 {
+  color: white;
+}
+.circleContent {
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #1F4DA1;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 18% 5%;
+}
+.circle p {
+  margin-left: 2em;
+}
+.signUpH1 {
+  margin-top: 60px;
+}
+.signUpH2 {
+  margin: auto;
+}
+.formContent {
+  margin: auto;
+  margin-top: 20px;
+  background-color: gray;
+  color: white;
+  vertical-align: middle;
+  padding: 5% 20%;
+}
+.newsSignupButton {
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+/**********************
+Calendar
+**********************/
+
+.googleCal {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/**********************
+Media Queries
+**********************/
+
+/* extra small only */
+@media (max-width: 575px) {
+  .contactBannerH1 {
+    color: #1F4DA1;
+    font-size: 1.3em;
+    bottom: 17px;
+  }
+  .trivH1 {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+  }
+  .circleContent {
+    padding: 18% 5%;
+  }
+  .contactCircleLiz {
+    padding: 15% 10%;
+  }
+}
+
+/* small and up */
+@media (min-width: 540px) {
+  .homeBannerText {
+    padding-top: 25%;
+  }
+  .answers {
+    margin-left: 1.5rem;
+  }
+  .circle {
+    max-width: 900px;
+    max-height: 900px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* medium and up */
+@media (min-width: 768px) {
+  .homeBannerText {
+    padding-top: 30%;
+  }
+  .aboutHeadText {
+    color: #1F4DA1;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .paraContainer {
+    margin-left: 20px;
+    text-align: left;
+  }
+  .grounded {
+    margin-left: 200px;
+  }
+  .circleContent {
+    padding: 10% 5%;
+  }
+}
+
+/* large and up */
+@media (min-width: 992px) {
+  nav {
+    font-size: 25px;
+  }
+  .navbar div {
+    margin-right: 30px;
+  }
+  .aboutHeadText {
+    font-size: 4em;
+  }
+  .htTrivPhoto {
+    margin: 2rem;
+    max-width: 90%;
+  }
+  .contactBannerH1 {
+    padding-top: 60px;
+  }
+  .contactCircleChandra {
+    margin-right: 20px;
+  }
+  .contactCircleLiz {
+    padding: 10% 7%;
+    margin-left: 20px;
+  }
+}
+
+/* extra large only */
+@media (min-width: 1200px) {
+  nav {
+    font-size: 40px;
+  }
+  .nav-item {
+    padding: .75rem;
+  }
+  .navbar div {
+    margin-right: 50px;
+  }
+}
